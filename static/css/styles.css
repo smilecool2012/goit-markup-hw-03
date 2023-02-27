@@ -25,6 +25,12 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -57,11 +63,6 @@ a {
     color: #4D5AE5;
 }
 
-.nav-link {
-    width: 48px;
-    height: 24px;
-}
-
 .nav-link a:hover,
 .nav-link a:focus {
     color: #404BBF;
@@ -72,7 +73,6 @@ a {
 }
 
 .contacts {
-    font-weight: 400;
     display: flex;
     gap: 40px;
 }
@@ -104,7 +104,9 @@ a {
 }
 
 .intro {
+    padding-top: 188px;
     background-color: #2E2F42;
+    padding-bottom: 188px;
 }
 
 .intro-title {
@@ -114,7 +116,6 @@ a {
     line-height: 1.07;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 188px;
     width: 500px;
 }
 
@@ -136,7 +137,6 @@ a {
     cursor: pointer;
     font-size: 16px;
     letter-spacing: 0.04em;
-    margin-bottom: 188px;
     border: none;
     width: 169px;
     height: 56px;
@@ -152,11 +152,14 @@ a {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .feature-content {
     font-weight: 400;
+}
+
+.feature-list {
     width: 264px;
 }
 
@@ -167,11 +170,12 @@ a {
     line-height: 1.11;
     text-transform: capitalize;
     color: #2E2F42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     justify-content: center;
 }
 
 .team {
+    padding-top: 120px;
     background-color: #F4F4FD;
 }
 
@@ -183,7 +187,7 @@ a {
     text-transform: capitalize;
     color: #2E2F42;
     justify-content: center;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .person {
@@ -191,11 +195,11 @@ a {
     font-size: 20px;
     line-height: 1.2;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .person-info {
     font-weight: 400;
-    padding-top: 8px;
 }
 
 .footer {
@@ -204,13 +208,13 @@ a {
 }
 
 .footer-content {
+    margin-top: 16px;
     width: 264px;
     font-weight: 400;
     color: #E7E9FC;
 }
 
 .footer-logo {
-    margin-bottom: 16px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -242,12 +246,13 @@ a {
 
 .portfolio-nav-btn:hover,
 .portfolio-nav-btn:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background: #404BBF;
     color: #FFFFFF;
 }
 
 .project-title {
-    margin-top: 32px;
+    margin-bottom: 32px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -257,9 +262,6 @@ a {
 .project-info {
     font-weight: 400;
     color: #434455;
-    padding-bottom: 48px;
-    margin-top: 8px;
-    border-bottom: 1px solid #e7e9fc;
 }
 
 .container {
@@ -292,6 +294,7 @@ a {
 
 .section {
     padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .features {
@@ -320,37 +323,40 @@ a {
     justify-content: center;
 }
 
-.card-content{
-    margin-top: 32px;
+.card-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
-.btn-nav-list{
+.btn-nav-list {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     justify-content: center;
     text-align: center;
 }
 
-.projects{
+.projects {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 24px;
+    gap: 48px 24px;
     flex-wrap: wrap;
     padding-bottom: 72px;
 }
 
-.project-content{
+.project-content {
     display: flex;
     flex-direction: column;
 }
 
-.project-desc{
-    padding-left: 16px;
+.project-desc {
+    padding: 32px 16px;
     border: 1px solid #E7E9FC;
     border-top: 0;
 }
